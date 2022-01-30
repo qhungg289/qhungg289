@@ -1,0 +1,223 @@
+:root {
+	--main-color: #ff8787;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #000;
+	font-family: "IBM Plex Sans", sans-serif;
+	color: #fff;
+	position: relative;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+.nav-item {
+	display: flex;
+	gap: 4rem;
+}
+
+.logo {
+	width: 2rem;
+}
+
+.container {
+	padding: 2rem;
+}
+
+.hero-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20rem;
+}
+
+.hero-content .content p {
+	font-size: 1.15rem;
+	width: 9rem;
+	padding-bottom: 1rem;
+	border-bottom: 6px solid;
+	border-image: linear-gradient(
+			to right,
+			#ff3c3c 33%,
+			var(--main-color) 33%,
+			var(--main-color) 66%,
+			#ffd4d4 66%,
+			#ffd4d4 99%
+		)
+		5;
+}
+
+.hero-content .content h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	line-height: 3.5rem;
+}
+
+.hero-content .content h1 span {
+	font-weight: 900;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	width: fit-content;
+	margin-top: 3rem;
+	padding: 0.75em 1.75em;
+	color: black;
+	font-weight: 600;
+	gap: 0.5em;
+	box-shadow: 4px 4px 0px var(--main-color);
+	transition: 0.25s;
+}
+
+.button:hover,
+.button:focus {
+	box-shadow: 8px 8px 0px var(--main-color);
+}
+
+.button span,
+.button span img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.photograph-background {
+	background-image: linear-gradient(
+			to left,
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0),
+			rgb(0, 0, 0)
+		),
+		url(../pictures/ben-weber-7lGiQDLnkUs-unsplash.jpg);
+	background-size: cover;
+	width: 50%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -10;
+}
+
+.contact {
+	position: relative;
+}
+
+.contact h2 {
+	font-size: 2rem;
+	letter-spacing: 3px;
+}
+
+.contact h2::after {
+	content: "Liên lạc";
+	font-size: 10rem;
+	position: absolute;
+	left: -58px;
+	top: -77px;
+	z-index: -10;
+	color: #ffffff1a;
+	letter-spacing: 20px;
+}
+
+.contact .link-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+	padding: 4rem;
+	width: 50%;
+	border-left: 6px solid var(--main-color);
+	border-bottom: 6px solid var(--main-color);
+	gap: 1.25rem;
+}
+
+.contact .link-container a {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.contact .link-container a span img,
+.contact .link-container a span {
+	width: 2rem;
+	height: 2rem;
+}
+
+.scroll-indicator {
+	position: absolute;
+	top: 77vh;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes bounce {
+	from {
+		top: 77vh;
+	}
+
+	to {
+		top: 80vh;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.hero-content {
+		margin-top: 40vh;
+		margin-bottom: 6rem;
+	}
+
+	.hero-content .content p {
+		font-size: 0.75rem !important;
+	}
+
+	.hero-content .content h1 {
+		font-size: 1.75rem !important;
+	}
+
+	.button {
+		margin-top: 2rem;
+	}
+
+	.scroll-indicator {
+		display: none;
+	}
+
+	.photograph-background {
+		width: 100%;
+		background-image: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0),
+				rgba(0, 0, 0, 0.5),
+				rgb(0, 0, 0)
+			),
+			url(../pictures/ben-weber-7lGiQDLnkUs-unsplash.jpg);
+		background-position: bottom;
+	}
+}
