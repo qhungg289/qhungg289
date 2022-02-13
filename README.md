@@ -4,7 +4,7 @@
 
 I'm a passionate **Web Developer**, and also a college student studying Information Technology.
 
-Contact:
+### Contact:
 
 - [Email](mailto:duongquanghung749@gmail.com)
 - [Facebook](https://facebook.com/qhungg289)
