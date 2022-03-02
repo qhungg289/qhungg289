@@ -8,13 +8,3 @@ I'm a passionate **Web Developer**, and also a college student studying Informat
 
 - [Email](mailto:duongquanghung749@gmail.com)
 - [Facebook](https://facebook.com/qhungg289)
-
-## Skills
-
-- HTML
-- CSS
-- JavaScript
-- ReactJS
-- Express
-- MongoDB
-- UI/UX design
