@@ -1,4 +1,4 @@
-# Hi there 👋! My name is Hung Duong Quang
+# Hi there 👋
 
 ### Contact:
 
